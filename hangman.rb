@@ -23,7 +23,6 @@ class Hangman
 
   def self.from_yaml(string)
     data = YAML.load(string)
-    p data
     self.new(data[:word], data[:res], data[:hangman], data[:incorrect_guesses])
   end
 
